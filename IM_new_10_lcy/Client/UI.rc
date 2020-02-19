@@ -1,0 +1,208 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_REG DIALOG DISCARDABLE  0, 0, 210, 196
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "注册"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDE_REG_ID,79,25,97,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDE_REG_PSW,79,45,97,12,ES_CENTER | ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDE_NAME,79,64,97,12,ES_CENTER | ES_AUTOHSCROLL
+    COMBOBOX        IDC_SEX,80,86,97,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDE_AGE,80,108,97,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDE_EMAIL,79,130,97,12,ES_CENTER | ES_AUTOHSCROLL
+    PUSHBUTTON      "注册",IDB_REG_OK,33,158,42,14
+    PUSHBUTTON      "退出",IDB_REG_CLOSE,135,158,42,14
+    LTEXT           "账号 ：",IDS_ID,36,26,34,14
+    LTEXT           "年龄 ：",IDS_AEG,36,110,34,14
+    LTEXT           "E-mail ：",IDS_EMAIL,36,132,34,14
+    LTEXT           "姓名 ：",IDS_NAME,36,66,34,14
+    LTEXT           "性别 ：",IDS_SEX,36,88,34,14
+    LTEXT           "密码 ：",IDS_PASS,36,46,34,14
+END
+
+IDD_LOGIN DIALOG DISCARDABLE  0, 0, 215, 133
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "登录"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDE_LOG_ID,79,25,97,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDE_LOG_PSW,79,45,97,12,ES_CENTER | ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    CONTROL         "在线",IDC_INLINE,"Button",BS_AUTORADIOBUTTON,64,75,32,
+                    10
+    CONTROL         "离线",IDC_OUTLINE,"Button",BS_AUTORADIOBUTTON,129,75,32,
+                    10
+    PUSHBUTTON      "登录",IDB_LOG,42,97,50,14
+    PUSHBUTTON      "注册",IDB_REG,132,97,41,12
+    LTEXT           "账号 ：",IDS_ID,36,26,34,14
+    LTEXT           "密码 ：",IDS_PASS,36,46,34,14
+END
+
+IDD_MAIN DIALOG DISCARDABLE  0, 0, 145, 271
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 10, "System"
+BEGIN
+    LTEXT           "ID:",IDS_MAIN_ID,73,14,16,11
+    LTEXT           "Static",IDS_SID,92,14,38,9
+    CONTROL         "在线",IDR_ONLINE,"Button",BS_AUTORADIOBUTTON,68,34,26,
+                    10
+    CONTROL         "离线",IDR_OUTLINE,"Button",BS_AUTORADIOBUTTON,102,34,29,
+                    10
+    PUSHBUTTON      "个人信息",IDB_INFO,75,49,45,12
+    PUSHBUTTON      "添加好友",IDB_ADD,25,227,37,14
+    PUSHBUTTON      "删除好友",IDB_DELETE,77,227,37,14
+    PUSHBUTTON      "CHAT",IDB_CHAT,77,246,37,14
+    LISTBOX         IDL_FRIEND,11,65,120,159,LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "",IDB_PICTURE,"Button",BS_OWNERDRAW | WS_TABSTOP,14,14,
+                    51,48
+    PUSHBUTTON      "查看信息",IDB_FRI_INFO,25,246,37,14
+END
+
+IDD_ADD DIALOG DISCARDABLE  0, 0, 187, 94
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "添加好友"
+FONT 10, "System"
+BEGIN
+    LTEXT           "ID:",IDS_ADD_ID,36,28,28,11
+    EDITTEXT        IDE_ADD_ID,70,26,83,13,ES_CENTER | ES_AUTOHSCROLL
+    PUSHBUTTON      "添加好友",IDB_ADD,29,55,50,14
+    PUSHBUTTON      "退出",IDB_CANCEL,97,55,50,14
+END
+
+IDD_CHAR DIALOG DISCARDABLE  0, 0, 243, 198
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Chat"
+FONT 10, "System"
+BEGIN
+    LISTBOX         IDL_CHAT,7,7,229,136,LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | NOT WS_BORDER | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDE_CHAT,7,144,229,31,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | NOT WS_BORDER
+    PUSHBUTTON      "发送",IDB_SEND,193,176,43,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_REG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 203
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 189
+    END
+
+    IDD_LOGIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 208
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 126
+    END
+
+    IDD_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 138
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 264
+    END
+
+    IDD_ADD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_CHAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 236
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 191
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

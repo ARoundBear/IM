@@ -1,0 +1,56 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Client - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/UI.res" /d "_DEBUG" "C:\Documents and Settings\302\桌面\IM_new_10_4\Client\UI.rc"" 
+Creating temporary file "C:\DOCUME~1\302\LOCALS~1\Temp\RSP1EE.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/Client.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Documents and Settings\302\桌面\IM_new_10_4\Client\Client.cpp"
+"C:\Documents and Settings\302\桌面\IM_new_10_4\Client\FriList.cpp"
+"C:\Documents and Settings\302\桌面\IM_new_10_4\Client\ThreadFunc.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\302\LOCALS~1\Temp\RSP1EE.tmp" 
+Creating temporary file "C:\DOCUME~1\302\LOCALS~1\Temp\RSP1EF.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/Client.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Documents and Settings\302\桌面\IM_new_10_4\Client\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\302\LOCALS~1\Temp\RSP1EF.tmp" 
+Creating temporary file "C:\DOCUME~1\302\LOCALS~1\Temp\RSP1F0.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/Client.pdb" /debug /machine:I386 /out:"Debug/Client.exe" /pdbtype:sept 
+".\Debug\Client.obj"
+".\Debug\FriList.obj"
+".\Debug\StdAfx.obj"
+".\Debug\ThreadFunc.obj"
+".\Debug\UI.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\302\LOCALS~1\Temp\RSP1F0.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+Client.cpp
+c:\documents and settings\302\桌面\im_new_10_4\client\protocol.h(8) : warning C4200: nonstandard extension used : zero-sized array in struct/union
+FriList.cpp
+ThreadFunc.cpp
+c:\documents and settings\302\桌面\im_new_10_4\client\protocol.h(8) : warning C4200: nonstandard extension used : zero-sized array in struct/union
+Generating Code...
+Linking...
+Creating command line "bscmake.exe /nologo /o"Debug/Client.bsc"  ".\Debug\StdAfx.sbr" ".\Debug\Client.sbr" ".\Debug\FriList.sbr" ".\Debug\ThreadFunc.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+Client.exe - 0 error(s), 2 warning(s)
+</pre>
+</body>
+</html>

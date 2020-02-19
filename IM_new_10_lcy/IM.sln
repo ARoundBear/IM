@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.489
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Client", "Client\Client.vcxproj", "{107C31E9-1E16-4C5F-B4A7-884D25EFB47B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sever", "Sever\Sever.vcxproj", "{4BCC03E0-F146-4D69-A1E5-EB61A9B04FFE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+		Template|x86 = Template|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{107C31E9-1E16-4C5F-B4A7-884D25EFB47B}.Debug|x86.ActiveCfg = Debug|Win32
+		{107C31E9-1E16-4C5F-B4A7-884D25EFB47B}.Debug|x86.Build.0 = Debug|Win32
+		{107C31E9-1E16-4C5F-B4A7-884D25EFB47B}.Release|x86.ActiveCfg = Release|Win32
+		{107C31E9-1E16-4C5F-B4A7-884D25EFB47B}.Release|x86.Build.0 = Release|Win32
+		{107C31E9-1E16-4C5F-B4A7-884D25EFB47B}.Template|x86.ActiveCfg = Release|Win32
+		{107C31E9-1E16-4C5F-B4A7-884D25EFB47B}.Template|x86.Build.0 = Release|Win32
+		{4BCC03E0-F146-4D69-A1E5-EB61A9B04FFE}.Debug|x86.ActiveCfg = Debug|Win32
+		{4BCC03E0-F146-4D69-A1E5-EB61A9B04FFE}.Debug|x86.Build.0 = Debug|Win32
+		{4BCC03E0-F146-4D69-A1E5-EB61A9B04FFE}.Release|x86.ActiveCfg = Release|Win32
+		{4BCC03E0-F146-4D69-A1E5-EB61A9B04FFE}.Release|x86.Build.0 = Release|Win32
+		{4BCC03E0-F146-4D69-A1E5-EB61A9B04FFE}.Template|x86.ActiveCfg = Template|Win32
+		{4BCC03E0-F146-4D69-A1E5-EB61A9B04FFE}.Template|x86.Build.0 = Template|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {901A1DE5-BE1A-4BCF-BB74-611BDCC92F1A}
+	EndGlobalSection
+EndGlobal
